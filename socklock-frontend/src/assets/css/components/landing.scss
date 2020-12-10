@@ -1,0 +1,48 @@
+@import "./colors.scss";
+.main-landing {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.landing-img {
+  overflow-y: hidden;
+  background-image: url("./../../images/covers/landing-cover.jpg");
+  height: 90vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.landing-card {
+  .white-bg {
+    background-color: #fff;
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.2;
+    border-radius: 10px;
+  }
+  &-img {
+    width: 95%;
+    border-radius: 10px;
+    border: 5px solid $mainColor;
+  }
+  &-link {
+    color: #fff;
+    &:hover {
+      text-decoration: none;
+      color: #fff;
+    }
+    &-title {
+      position: absolute;
+      font-size: 2.5em;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      color: #fff;
+      z-index: 100;
+      text-shadow: 2px 2px 5px #333;
+    }
+  }
+}

@@ -1,0 +1,57 @@
+@import "./colors.scss";
+
+.navbar {
+  background-color: $mainColor;
+  .fa-bars {
+    font-size: 1.2rem;
+  }
+  .dropdown-menu {
+    background-color: $paleOrange;
+  }
+  .fa-user,
+  .fa-shopping-cart {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-left: clamp(0.5em, 1.5em, 1.5em);
+  }
+  .nav-item::marker {
+    display: none;
+  }
+  .search {
+    // width: 40%;
+    text-align: center;
+    margin: 0 auto;
+    button {
+      border-radius: 10px;
+      background-color: white;
+      border: 5px solid $paleOrange;
+      border-left: 0;
+      box-sizing: border-box;
+      padding: 0 0.8em;
+      color: $mainColor;
+      &:focus {
+        outline: none;
+      }
+    }
+    input {
+      width: 20vw;
+      border: 5px solid $paleOrange;
+      border-right: none;
+      border-radius: 10px;
+      color: $secondaryColor;
+      &:focus {
+        outline: none;
+      }
+      &::placeholder {
+        color: $secondaryColor;
+      }
+    }
+  }
+}
+.nav-header {
+  margin-top: 75px;
+  background-color: $thirdColor;
+  color: white;
+  padding: 5px 0;
+  text-align: center;
+}

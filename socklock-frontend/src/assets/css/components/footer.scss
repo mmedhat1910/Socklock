@@ -1,0 +1,45 @@
+@import "./colors.scss";
+footer {
+  color: #222;
+  background-color: $thirdColor;
+  margin: 0;
+  padding: 5px;
+  p {
+    margin: 0;
+  }
+  .h3 {
+    margin-bottom: 20px;
+    color: #444;
+  }
+  .footer {
+    &-list {
+      list-style: none;
+      padding: 0 5px;
+      a:active {
+        color: #fff;
+      }
+      .contact-link {
+        font-size: 1.1em;
+
+        .fa-phone {
+          transform: scaleX(-1);
+        }
+        &:hover {
+          text-decoration: none;
+        }
+      }
+      .social-link {
+        font-size: 2.5em;
+      }
+      .fa-facebook-square {
+        color: #4267b2;
+      }
+      .fa-instagram {
+        color: #c13584;
+      }
+      .fa-twitter {
+        color: #1da1f2;
+      }
+    }
+  }
+}
