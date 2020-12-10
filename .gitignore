@@ -25,3 +25,7 @@ yarn-error.log*
 
 .eslintcache
 /.eslintcache
+
+*.psd
+socks.png
+desktop.ini
